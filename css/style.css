@@ -33,10 +33,11 @@ body {
 
 .top-nav-bar {
     height: 7vh;
-    background-color: #ff4d4d7a;
+    background-color: #ff4d4d;
     position: fixed;
-    z-index: 1;
+    top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -87,7 +88,8 @@ body {
 .header {
     width: 100%;
     background-position:top;
-    height: 100vh;
+    height: 93vh;
+    margin-top: 7vh;
     background-image: linear-gradient(to bottom, #ff4d4d, #ff4d4d95), url("../assets/banner.png");
     /*background-image: linear-gradient(to bottom, #ff4d4d95, #ff4d4d95), url("../assets/banner.png");*/
     background-size: cover;
@@ -97,7 +99,7 @@ body {
 
 .header-chef {
     float: left;
-    padding: 15rem 15rem 0 15rem;
+    padding: 10rem 15rem 0 15rem;
 }
 
 .chef-img {
@@ -108,7 +110,7 @@ body {
 .header-textbox {
     display: inline-block;
     text-align: center;
-    padding: 25rem 10rem;
+    padding: 16rem 10rem;
 }
 
 .pbb1, .pbb2 {
