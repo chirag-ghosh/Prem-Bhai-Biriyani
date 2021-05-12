@@ -15,14 +15,19 @@
 	font-family: "edo-webfont";
 	src: url("edo-webfont.woff") format('woff');
 }
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 0.6vw;
+}
+
 body {
-    font-size: 16px;
+    /*font-size: 16px;*/
     color: #ffe8d5;
 }
 
@@ -36,15 +41,15 @@ body {
 
 .logo {
     float: left;
-    padding: 10px 35px;
+    padding: 1rem 3.5rem;
 }
 
 .logo-img {
-    height: 45px;
+    height: 4.5rem;
 }
 
 .nav-bar-items {
-    width: 100%;
+    width: 100vw;
     list-style: none;
 }
 
@@ -53,7 +58,7 @@ body {
     text-decoration: none;
     float: right;
     color: #ffe8d5;
-    padding: 20px 50px 0 50px;
+    padding: 2rem 5rem 0 5rem;
     text-align: center;
     transition: all 0.2s;
 }
@@ -64,17 +69,18 @@ body {
     font-family: "Lato", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.6rem;
 }
 
 .nav-bar-items li:hover {
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px) scale(120%);
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-.2rem) scale(120%);
     letter-spacing: 110%;
 }
 
 .nav-bar-items li:active {
-    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-1px) scale(110%);
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-.1rem) scale(110%);
     letter-spacing: 105%;
 }
 
@@ -90,53 +96,49 @@ body {
 }
 
 .header-chef {
-    height: 100%;
     float: left;
-    width: 50%;
-    padding-left: 100px;
-    padding-top: 150px;
+    padding: 15rem 15rem 0 15rem;
 }
 
 .chef-img {
     display: inline-block;
+    width: 35vw;
 }
 
 .header-textbox {
+    display: inline-block;
     text-align: center;
-    float: left;
-    padding-top: 10%;
-    padding-left: 5%;
-    font-size: 100px;
+    padding: 25rem 10rem;
 }
 
 .pbb1, .pbb2 {
-    font-size: 1.8em;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: auto;
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     animation-name: scaleOut;
     animation-duration: 0.4s;
     animation-fill-mode: backwards;
+    text-align: center;
 }
 
 .pbb1 {
-    font-size: 1.4em;
+    font-size: 10rem;
 }
 
 .pbb2 {
+    font-size: 13rem;
     animation-delay: 0.2s;
     font-weight: 400;
+    padding-bottom: 10rem;
 }
 
-.containerdivNewLine { 
-    clear: both;
-    float: left;
-}
+
 
 .btn-div {
     display: inline-block;
     background-color: #ffe8d5;
     color: #ff8364;
-    font-size: 20px;
-    border-radius: 100px;
+    font-size: 2rem;
+    border-radius: 10rem;
     transition: all 0.2s;
     backface-visibility: hidden;
 }
@@ -154,7 +156,7 @@ body {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-    padding: 15px 40px;
+    padding: 1.1rem 4rem;
    
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -164,14 +166,14 @@ body {
 }
 
 .btn-div:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px) scale(120%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-.2rem) scale(120%);
     letter-spacing: 110%;
 }
 
 .btn-div:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-1px) scale(110%);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+    transform: translateY(-.1rem) scale(110%);
     letter-spacing: 105%;
 }
 
@@ -179,11 +181,11 @@ body {
 
     0% {
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(5rem);
     }
 
     80% {
-        transform: translateY(-7px);
+        transform: translateY(-.7rem);
     }
 
     100% {
@@ -196,7 +198,7 @@ body {
 
     0% {
         opacity: 0;
-        scale: 120%;
+        scale: 110%;
     }
 
     80% {
