@@ -24,6 +24,7 @@
 
 html {
     font-size: 0.6vw;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -212,4 +213,148 @@ body {
         scale: 100%;
     }
     
+}
+
+.specialities {
+    width: 100%;
+    height: 100vh;
+    background-color: #ececece0;
+}
+
+.heading-secondary {
+    color: #ff4d4d;
+    padding: 10rem 0 2rem 0;
+    letter-spacing: 1rem;
+    font-family: "edo-webfont", "Lato", sans-serif;
+}
+
+.heading-secondary h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8rem;
+}
+
+.tagline-specialities {
+    color: #ff8364;
+    font-family: "Lato", sans-serif;
+}
+
+.tagline-specialities h6 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+.special-foods {
+    margin: 2vw 4vw;
+}
+
+.item {
+    width: 20vw;
+    padding: 0 1vw;
+}
+
+.food-card {
+    background-color: #fafafaef;
+    height: 60vh;
+    text-align: center;
+    border-radius: 2rem;
+    transition: all .2s;
+}
+
+.food-card:hover {
+    transform: scale(105%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.food-card-img {
+    width: 20vw;
+    display: inline-block;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+.food-card-title {
+    color: black;
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-align: left;
+    padding: 1rem 1rem;
+    float: left;
+}
+
+.food-label {
+    float: right;
+    padding: 1rem 1rem;
+}
+
+.food-label-logo {
+    width: 3rem;
+}
+
+.containerdivNewLine {
+    clear: both;
+}
+
+.food-card-des {
+    color: black;
+    font-size: 1.4rem;
+    padding: 2rem 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+}
+
+.price-section {
+    color: black;
+    font-family: "Lato", sans-serif;
+}
+
+.net-price {
+    font-size: 2rem;
+    color: #ff4d4d;
+    padding: 0 0.5rem 0 2rem;
+}
+
+.mrp {
+    font-size: 1.6rem;
+    padding: 0 1rem 0 0;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 1.6rem;
+}
+
+
+
+.food-card-btn {
+    display: inline-block;
+    border: none;
+    padding: .3rem 2rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: green;
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: .2rem solid green;
+    border-radius: 2rem;
+    transition: all .2s;
+}
+
+.food-card-btn:hover{
+    transform: scale(110%);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.food-card-btn:focus,
+.food-card-btn:active {
+    background-color: green;
+    color: white;
+    transform: scale(100%);
+    box-shadow: none;
 }
