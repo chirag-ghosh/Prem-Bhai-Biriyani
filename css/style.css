@@ -30,6 +30,8 @@ html {
 body {
     /*font-size: 16px;*/
     color: #ffe8d5;
+    background-color: #ebd2d2e0;
+    backface-visibility: hidden;
 }
 
 .top-nav-bar {
@@ -215,10 +217,9 @@ body {
     
 }
 
-.specialities {
+.section {
     width: 100%;
-    height: 100vh;
-    background-color: #ececece0;
+    height: auto;
 }
 
 .heading-secondary {
@@ -234,21 +235,23 @@ body {
     font-size: 8rem;
 }
 
-.tagline-specialities {
+.tagline-section {
     color: #ff8364;
     font-family: "Lato", sans-serif;
 }
 
-.tagline-specialities h6 {
+.tagline-section h6 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
 }
 
 
-.special-foods {
+.section-table {
     margin: 2vw 4vw;
 }
+
+
 
 .item {
     width: 20vw;
@@ -261,6 +264,7 @@ body {
     text-align: center;
     border-radius: 2rem;
     transition: all .2s;
+    margin: 2rem 0;
 }
 
 .food-card:hover {
@@ -330,6 +334,7 @@ body {
 
 .food-card-btn {
     display: inline-block;
+    position: relative;
     padding: .3rem 2rem;
     margin: 1rem 0;
     text-decoration: none;
@@ -396,4 +401,52 @@ body {
     z-index: 1;
     opacity: 1;
     transform: translateX(-.1rem);
+}
+
+.search-bar-div {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.search-bar-box {
+    display: inline-block;
+    background-color: #fafafaef;
+    transition: all .2s;
+    border-radius: 10rem;
+    
+}
+
+.search-bar {
+    height: 5rem;
+    width: 50rem;
+    padding: 2rem;
+    outline: 0;
+    border: none;
+    vertical-align: top;
+    background-color: #fafafaef;
+    display: inline-block;
+    border-radius: 10rem 0 0 10rem;
+    font-size: 1.6rem;
+}
+
+.icon-search {
+    color: #fafafaef;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ff4d4d;
+    padding: .9rem;
+    border-radius: 0 10rem 10rem 0;
+}
+
+.icon-search-img {
+    height: 3rem;
+    padding: 0 1rem;
+}
+
+.search-bar-box:hover {
+    transform: scale(110%);
+    outline: .3rem solid #ff4d4d;
+    outline-offset: -.1rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
 }
