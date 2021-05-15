@@ -24,7 +24,7 @@
 }
 
 html {
-    font-size: 0.6vw;
+    font-size: 11px;
     scroll-behavior: smooth;
 }
 
@@ -453,10 +453,6 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
-.review-table-div {
-
-}
-
 .review-table {
     padding: 8rem ;
 }
@@ -540,8 +536,8 @@ body {
 }
 
 .form-div {
-    margin: 5vw 20vw;
-    height: 22vw;
+    margin: 9rem 33rem;
+    height: 36rem;
     display: block;
     background-color: #ff4d4d;
     box-shadow: 0 0 4rem .5rem #ff8364b6;
@@ -549,14 +545,14 @@ body {
 
 .form-banner-div {
     background-color: white;
-    height: 22vw;
+    height: 36rem;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     float: left;
 }
 
 .form-banner {
-    height: 20vw;
-    padding: 4vw 8vw 0 4vw;
+    height: 32rem;
+    padding: 6.4rem 13rem 0 6.2rem;
 }
 
 .review-form {
@@ -612,6 +608,7 @@ body {
     border-radius: 1rem;
     transition: all 0.2s;
     backface-visibility: hidden;
+    text-align: center;
 }
 
 .btn-div-form a:link,
@@ -690,3 +687,158 @@ body {
 .link-icon {
     height: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        font-size: 7px;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .header {
+        height: auto;
+    }
+    .header-chef {
+        text-align: center;
+        width: 100%;
+    }
+    .chef-img {
+        display: inline-block;
+        width: 100%;
+    }
+    .header-textbox {
+        text-align: center;
+        padding:8rem 0;
+    }
+    .pbb1, .pbb2 {
+        width: 100%;
+        display: inline-block;
+    }
+    .food-card {
+        height: auto;
+    }
+    .item {
+        width: 100%;
+        display: block;
+        padding: 4rem;
+    }
+    .food-card-img {
+        width: 100%;
+    }
+
+    .food-card:hover {
+        border: .4rem solid #ff4d4d;
+        outline: none;
+    }
+    #recommendations-heading {
+        font-size: 5rem;
+    }
+    .search-bar-box:hover {
+        border: .3rem solid #ff4d4d;
+        outline:none;
+    }
+    .user-review {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .review-card {
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .review-img {
+        height: 10rem;
+        border-radius: 10rem;
+        border: .3rem solid #ff4d4d;
+        outline: none;
+    }
+    
+    .form-div {
+        margin: 5%;
+        height: auto;
+        width: 90%;
+        display: inline-block;
+        background-color: #ff4d4d;
+        box-shadow: 0 0 4rem .5rem #ff8364b6;
+    }
+    
+    .form-banner-div {
+        background-color: white;
+        height: auto;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        float: auto;
+    }
+    
+    .form-banner {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    
+    .review-form {
+        padding: 0 0 5rem 0;
+        text-align: center;
+    }
+    
+    .name-reviewer {
+        margin: 4rem 2rem 0 2rem;
+    }
+    
+    .radio-div {
+        padding: 1rem 1.5rem;
+    }
+    .btn-div-form {
+        margin: 0;
+    }
+    
+    .footer-section {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .footer-heading {
+        font-size: 3rem;
+        padding: 0;
+    }
+    
+    .footer-text {
+        font-size: 1.2rem;
+        padding: 2rem;
+    }
+    
+    .terms-text {
+        padding: 1rem 3rem;
+    }
+
+    .top-nav-bar {
+        height: 9rem;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .logo {
+        float: left;
+        padding: 1.4rem 3rem;
+    }
+    
+    .logo-img {
+        height: 5rem;
+    }
+    
+    .nav-bar-items {
+        width: fit-content;
+        list-style: none;
+    }
+
+    .nav-bar-items li,
+    .nav-bar-items li:visited {
+        float: right;
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
+
+    .nav-bar-items a {
+        font-size: 1.6rem;
+    }
+  }
